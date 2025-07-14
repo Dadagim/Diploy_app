@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wdth,wght@88.1,900&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wdth,wght@88.1,900&family=Oswald:wght@200..700&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wdth,wght@88.1,900&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+:root{
+  --bg-color: #151212;
+  --second-bg-color: #131313;
+  --text-color: #ffffff;
+  --main-color: #cd8115;
+  --big-font: 1rem;
+  --small-text: #8D6A6A
+}
+
+@media (min-width: 110px) {
+
+  .header
+  {
+    background: var(--bg-color);
+    position: sticky;
+    top: 0;
+    
+  }
+  .navigator
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10%;
+    height: 80px;
+    backdrop-filter: blur(10px);
+  }
+  .navigator .logo
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    
+  }
+  .navigator .logo h2
+  {
+    font-family: "Pacifico", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    
+  }
+  
+  .navigator .logo img
+  {
+    width: 80px;
+    padding-bottom: 10px;
+    
+  }
+  .navigator .links ul
+  {
+    
+    display: none;
+    padding-left: 20px;
+  }
+  .navigator .links ul li
+  {
+    text-decoration: none;
+    margin-left: 20px;
+    list-style: none;
+  }
+  
+  .navigator .links h1
+  {
+    color: var(--text-color);
+    padding-right:10px;
+  }
+  .navigator .links ul li a{
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 10px;
+    width: 30px;
+    height: 20px;
+    border-radius: 20px;
+    transition: .4s ease;
+  }
+   .navigator .links ul li a:hover
+   {
+    background: var(--main-color);
+
+   }
+  
+  
+  
+  
+  /*hero section of the web */
+  .hero{
+    background: var(--bg-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    padding: 10%;
+    
+  }
+  .hero .img img{
+    border-radius: 50px;
+    width: 400px;
+  }
+  
+  
+  .hero .content {
+    color: var(--text-color);
+    font-family: "Oswald", sans-serif;
+    margin: 40px;
+  }
+  .hero .content h2
+  {
+    font-size: 3rem;
+    
+  }
+  .hero span{
+    color: var(--main-color)
+  }
+  .hero .content p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: var(--small-text);
+    margin-bottom: 20px;
+  }
+  .hero .content a {
+    color: var(--text-color);
+    background: var(--main-color);
+    margin-top: 50px;
+    padding: 10px 20px 10px 20px;
+    font-size: 0.8rem;
+    box-shadow: 0 0px 10px 0 #000;
+    border-radius: 20px;
+    transition: .3s ease-in;
+  }
+  .hero .content a:hover{
+    background: var(--text-color);
+    color: #000;
+  }
+  
+  
+  
+  
+  
+  /*--------about sections-----*/
+  .about {
+    background: var(--bg-color);
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+  }
+  .about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    color: var(--text-color);
+  }
+  .container .right{
+    margin: 2%;
+  }
+  .container .right h1{
+    text-align: left;
+    
+  }
+  .container .right p
+  {
+    color: var(--small-text);
+    margin-bottom: 30px;
+    margin-top: 20px;  
+
+  }
+ .container .right a {
+  color: var(--text-color);
+  background: var(--main-color);
+  padding: 10px 20px 10px 20px;
+  font-size: 0.8rem;
+  box-shadow: 0 0px 10px 0 #000;
+  border-radius: 3px;
+  transition: .3s ease-in;
+}
+
+.about .container a:hover {
+  background: var(--text-color);
+  color: #000;
+}
+   .container .left{
+    margin:5%;
+    margin-top: 30px;
+    
+  }
+  .about .container .left ul li{
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: space-between;
+  }
+  .about .container .left ul li i{
+    font-size: 40px;
+    padding: 20px;
+  }
+  .left p{
+    color: var(--small-text);
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* -------weeks of the training-------*/
+  .weeks{
+    height: 270vh;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .weeks .info{
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 20px;
+    background: var(--main-color);
+  }
+  .weeks img{
+    width: 400px;
+  }
+  .weeks .info .text h2{
+    color: var(--text-color);
+  }
+  .weeks .info .text p{
+    color: whitesmoke;
+  }
+}
+
+
+
+
+
+
+
+@media (min-width: 560px) {
+  .navigator .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigator .logo img{
+    width: 150px;
+  }
+  
+  .navigator .links h1 {
+    display: none;
+  }
+  .navigator .links ul{
+    display: flex;
+  }
+  
+  
+  
+  .hero{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .about {
+    flex-flow: row;
+  }
+}
+
+
+
+

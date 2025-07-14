@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+
+{% block body %}
+
+
+<h1 style="color: #fff;">After noon</h1>
+
+<table>
+  <thead>
+    <tr>
+        
+     <th>Id</id> 
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>phone</th>
+      <th>learning-status</th>
+      <th>church</th>
+      
+      
+    </tr>
+  </thead>
+  
+  <tbody>
+  <ol>
+  {% for stdnt in registered %}
+    <tr>
+    <li>
+      <td>{{ stdnt.id }}</td>
+      <td>{{ stdnt.name }}</td>
+      <td>{{ stdnt.sex }}</td>
+      <td>{{ stdnt.age }}</td>
+      <td>{{ stdnt.phone }}</td>
+      <td>{{ stdnt.learning }}</td>
+      <td>{{ stdnt.church }}</td>
+       </li>
+    </tr>
+   </tbody>
+   {% endfor %} 
+   </tabel>
+   
+   <h1 style="color: #fff;">Morning</h1>
+
+   
+   <table>
+  <thead>
+    <tr>
+        
+     <th>Id</id> 
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>phone</th>
+      <th>learning-status</th>
+      <th>church</th>
+      
+      
+    </tr>
+  </thead>
+  
+  <tbody>
+  <ol>
+  {% for stdnt in morning %}
+    <tr>
+    <li>
+      <td>{{ stdnt.id }}</td>
+      <td>{{ stdnt.name }}</td>
+      <td>{{ stdnt.sex }}</td>
+      <td>{{ stdnt.age }}</td>
+      <td>{{ stdnt.phone }}</td>
+      <td>{{ stdnt.learning }}</td>
+      <td>{{ stdnt.church }}</td>
+       </li>
+    </tr>
+   
+   {% endfor %} 
+   </ol>
+  
+</table>
+
+{% endblock %}

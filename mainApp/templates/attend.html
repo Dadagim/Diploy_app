@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+
+{% block body %}
+
+<ul>
+
+
+
+
+</ul>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Mon</th>
+      <th>Tus</th>
+      <th>Wen</th>
+      <th>Thur</th>
+      <th>Fri</th>
+      
+      
+    </tr>
+  </thead>
+  
+  <tbody>
+
+  {% for stdnt in attendances %}
+    <tr>
+      <ol>
+    <li>
+      <td>{{ stdnt }}</td>
+      <td>P</td>
+      <td>L</td>
+      <td>A</td>
+      <td>P</td>
+      <td>P</td>
+       </li>
+    </tr>
+   
+   {% endfor %} 
+   </ol>
+  </tbody>
+</table>
+
+{% endblock %}
