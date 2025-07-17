@@ -254,6 +254,128 @@
   .weeks .info .text p{
     color: whitesmoke;
   }
+  
+    
+  .sect{
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 10%;
+  }
+  .sect .training{
+    background: url(/static/image/call.jpg);
+    width: 400px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .sect .tea{
+    background: url(/static/image/tea.jpg);
+    width: 450px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .sect .discus{
+    background: url(/static/image/cell.jpg);
+    width: 400px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+  }
+  .sect div h2{
+    color: var(--text-color);
+    width: 100%;
+    height: 20px;
+    background: var(--main-color);
+  }
+  
+  /*------hehhdhdhdhd */
+  
+  .register{
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+    
+  }
+  .register .content{
+    padding: 10%;
+    
+  }
+  .register .content h2{
+    color: white;
+  }
+  .register .content p{
+    color: var(--small-text);
+  }
+  .register h2{
+    color: var(--text-color);
+  }
+
+  .register form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+  }
+  .register form input{
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 20px;
+    
+  }
+  .register form .cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .register form .cont input{
+    width: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .register form .cont div{
+    display: flex;
+align-items: center;
+flex-flow: column;
+justify-content: center;
+color: var(--small-text);
+  }
+  
+  .register form select{
+    width:80%;
+    height: 30px;
+    margin-top: 30px;
+  }
+  
+   .register form button{
+  color: var(--text-color);
+  background: var(--main-color);
+  padding: 20px 20% 20px 20%;
+  font-size: 0.8rem;
+  margin-top: 20px;
+  font-size: 20px;
+  box-shadow: 0 0px 10px 0 #425548;
+  border-radius: 3px;
+  transition: .3s ease-in;
+}
+  button:hover{
+  	background: white;
+  	color: black
+  
+  }
+  
 }
 
 

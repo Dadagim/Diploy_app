@@ -97,9 +97,9 @@
 <div class="weeks">
   <div class="container">
     <div class="info">
-      <img srcset="" src="/static/image/digital.jpg" alt="">
+      <img srcset="" src="/static/image/identuty.jpg" alt="">
       <div class="text">
-        <h2>Digital purity</h2>
+        <h2>የክርስቲያን ማንነ እና ቅድስና</h2>
         <p>ይህ ዘመን የቴክኖሎጂ ስለሆነ ከወትሮው ይልቅ የክርስቲያንን ቅድስና የሚነጥቁ ብዙ ነገሮች አሉ። እነዚህን ጨምሮ በስልካችን የምንጠቀማቸውን ማህበራው ሚድያዎች እንዴት ማስተዳደር እንዳለብን እንማራለን።</p>
       </div>
     </div>
@@ -143,6 +143,72 @@
     </div>
   </div>
 </div>
+
+
+
+
+<!-- sextions of the training -->
+<div class="sect">
+  <div class="training">
+    <h2>የስልጠና ጊዜ</h2>
+  </div>
+  
+  <div class="discus">
+    <h2>የውይይት ጊዜ</h2>
+  </div>
+  
+  <div class="tea">
+    <h2>የሻይ እረፍት</h2>
+  </div>
+</div>
+
+
+
+
+<!-- registeration section -->
+  <section id="register" class="register">
+    <div class="content">
+      <h2>ይህን ስልጠና የሚወስድ ማንም ቢሆን ቀድሞ መመዝገብ ይኖርበታል።</h2>
+      <p>እዚሁ ለመመዝገብ ከታች ያሉትን ቦታዎች በትክክል ያለስህተት ይሙሉ።</p>
+    </div>
+    <form action="/register" method="post">
+          <h2>Register</h2>
+
+      <input autofocus  autocomplete="off" type="text" name="name" placeholder="ሥም ከን አያት">
+
+      <input type="number" autofocus placeholder="your age" name="age">
+      <input type="tel" autofocus  autocomplete="off"  name="phone" id="phone" placeholder="ስልክ ቁጥር">
+            <div class="cont">
+              <div>
+                <input type="radio" name="sex" value="male" id="sex"> <span>ወንድ</span>
+
+              </div>
+      <div>
+        <input type="radio" name="sex" value="female" id="sex"> <span>ሴት</span>
+      </div>
+            </div>
+      <select name="learning-status" id="learning-status">
+        <option selected disabled value="learning-status">የትምህርት ደረጃ</option>
+        <option value="Elementary">Elementary</option>
+        <option value="High-school">High school</option>
+        <option value="collage">collage</option>
+        <option value="University">University
+        </option>
+      </select>
+       <select name="church" id="church">
+          <option selected disabled value="Church">የመጡበት ቤ/ክ</option>
+          <option value="ማራናታ ቤ/ክ">ማራናታ ቤ/ክ</option>
+          <option value="ዳቶ ፋሬስ ሕ/ብ/ቤ/ክ">ዳቶ ፋሬስ ሕ/ብ/ቤ/ክ</option>
+      
+          <option value="ቃንጫ ሕ/ብ/ቤ/ክ">ቃንጫ ሕ/ብ/ቤ/ክ</option>
+          <option value="ገነት ቤ/ክ">ገነት ቤ/ክ</option>
+          <option value="ከሌላ ቤ/ክ">ከሌላ ቤ/ክ</option>
+        </select>
+      
+      <button type="submit">ይመዝገቡ</button>
+    </form>
+  </section>
+  
 
 
 

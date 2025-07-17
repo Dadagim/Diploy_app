@@ -23,12 +23,14 @@ def register():
     sex = request.form.get("sex")
     age = request.form.get("age")
     phone_no = request.form.get("phone")
+    if len(str(phone_no)) != 10:
+    	return "Wrong phone number"
     acadamy = request.form.get("learning-status")
     church = request.form.get("church")
     
     
     if not name or not sex or not age or not phone_no or not acadamy or not church:
-        flash("Somthing is Missing")
+        
         return 'Somthing is missing'
     if int(age) < 13:
         return 'You are too Young'
